@@ -1,0 +1,29 @@
+<div class="log-out-error" *ngIf="!isLoggedIn">
+    <h2>Você não tem autorização para estar aqui</h2>
+    <h2>Tente voltar para o login e se identificar</h2>
+    <button mat-raised-button color="primary" routerLink="/auth/login">Voltar ao login</button>
+</div>
+
+<div class='isLoggedIn' *ngIf="isLoggedIn">
+    <button mat-icon-button class="before-page-button" (click)="beforePage()" *ngIf="hasBeforePage">
+        <mat-icon class="before-page-icon">navigate_before</mat-icon>
+    </button>
+    <button mat-icon-button class="next-page-button" (click)="nextPage()" *ngIf="hasNextPage">
+        <mat-icon class="next-page-icon">navigate_next</mat-icon>
+    </button>
+    
+    <div class='basic' *ngIf="mode === 'basic'">
+        <app-image *ngIf="personagem"  [personagem]="personagem"></app-image>
+        <app-nome *ngIf="personagem" [personagem]="personagem"></app-nome>
+        <app-nivel *ngIf="personagem"  [personagem]="personagem" (newItemEvent)="refreshNivel($event)"></app-nivel>
+        <app-historia *ngIf="personagem" [personagem]="personagem"></app-historia>
+    </div>
+ 
+   
+    <div *ngIf="mode === 'inf'">
+
+    </div>
+    <div *ngIf="mode === 'lists'">
+
+    </div>
+</div>

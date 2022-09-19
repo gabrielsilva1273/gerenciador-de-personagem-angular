@@ -1,0 +1,31 @@
+<div class="container">
+   
+    
+    <button mat-icon-button class="edit-button" (click)="save()">
+        <mat-icon class="next-page-icon">save</mat-icon>
+    </button>
+  
+    <form [formGroup]="experienciaForm" class="form">
+        <a class="nivel-text">  Nivel {{personagem.nivel}}</a><br>
+        <mat-form-field appearance="standard">
+            <mat-icon matPrefix>star</mat-icon>
+            <input matInput autocomplete="off" type="text" formControlName="nivel">
+        </mat-form-field>
+        <mat-form-field appearance="standard">
+            <mat-icon matPrefix>star</mat-icon>
+            <input matInput autocomplete="off" type="text" formControlName="experiencia">
+        </mat-form-field>
+        <mat-form-field appearance="standard">
+            <mat-icon matPrefix>attach_money</mat-icon>
+            <input matInput autocomplete="off" type="text" formControlName="dinheiro">
+        </mat-form-field><br>
+        <mat-form-field appearance="standard">
+            <mat-icon matPrefix>local_drink</mat-icon>
+            <input matInput autocomplete="off" type="text" formControlName="hidratacao">
+        </mat-form-field>
+        <mat-form-field appearance="standard">
+            <mat-icon matPrefix>local_dining</mat-icon>
+            <input matInput autocomplete="off" type="text" formControlName="saciedade">
+        </mat-form-field>
+    </form>
+</div>

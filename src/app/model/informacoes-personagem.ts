@@ -1,0 +1,25 @@
+export interface InformacoesPersonagem {
+    totalPontos:number
+    agilidade:number
+    atletismo:number
+    destreza:number
+    pontaria:number
+    furtividade:number
+    percepcao:number
+    inteligencia:number
+    sabedoria:number
+    carisma:number
+    diplomacia:number
+    enganacao:number
+    intimidacao:number
+    vontade:number
+    sentirMotivacao:number
+    vida:number
+    energia:number
+    sanidade:number
+    bloqueio:number
+    esquiva:number
+    resistencia:number
+    resiliencia:number
+    iniciativa:number
+}

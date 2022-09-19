@@ -1,0 +1,9 @@
+
+<div class="container">
+    <img (click)="clickButton()" class="image" width="500px" height="500px"  [src]="image">
+    <div *ngIf="uploadMode" class="upload-div">
+        <input type="file" style="display:none" accept="image/*" (change)="onFileSelected($event)" #fileInput  />
+        <button mat-raised-button color="accent" (click)="fileInput.click()">Upload</button>
+    </div>
+</div> 
+

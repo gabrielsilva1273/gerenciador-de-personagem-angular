@@ -1,0 +1,57 @@
+mat-form-field {
+    color: white;
+    display: block;
+    
+}
+.box{
+    position: absolute;
+    width: 25%;
+    max-width: 30rem;
+    max-height:40rem;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid #1b1a1a;
+    border-radius: 1rem;
+    padding: 1rem;
+    background:#222121;
+}
+
+.registration-form{
+    color: white;
+}
+
+.lower-box{
+    margin-top: 1rem;
+}
+
+.bottom-buttons{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.loading{
+    display: flex;
+    justify-content: center;
+}
+
+.successMessageDiv{
+    margin-top: 1rem;
+    color: white;
+}
+
+.spinner{
+    height: 1.1rem;
+    width: 1rem;
+    border: 0.5rem solid;
+    border-color: white transparent white transparent;
+    border-radius: 50%;
+    animation: spin 1.4s ease infinite;
+}
+
+@keyframes spin{
+    to {
+        transform: rotate(360deg);
+    }
+}

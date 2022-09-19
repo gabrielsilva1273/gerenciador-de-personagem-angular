@@ -1,0 +1,153 @@
+.log-out{
+    position: absolute;
+    width: 5%;
+    max-width: 30rem;
+    max-height:40rem;
+    left: 97%;
+    top: 7%;
+    transform: translate(-50%, -50%);
+}
+
+.create{
+    position: absolute;
+    width: 5%;
+    max-width: 30rem;
+    max-height:40rem;
+    left: 3%;
+    top: 7%;
+    transform: translate(-50%, -50%);
+}
+
+.search-bar{
+    color: white;
+    position: absolute;
+    width: 40%;
+    max-width: 30rem;
+    max-height:40rem;
+    left: 50%;
+    top: 8%;
+    transform: translate(-50%, -50%);
+    border: 5px solid #1b1a1a;
+    border-radius: 1rem;
+    background:#222121;
+}
+
+.search-bar:focus-within{
+    box-shadow: 0 0 16px #8a7d7d;
+}
+
+.personagem-form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.form-field{
+    width: 90%;
+}
+.log-out-error{
+    color: white;
+    position: absolute;
+    width: 20%;
+    max-width: 30rem;
+    max-height:40rem;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid #1b1a1a;
+    border-radius: 1rem;
+    padding: 1rem;
+    background:#222121;
+}
+
+.before-page-button{
+    position: absolute;
+    left: 1.8%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+}
+
+.before-page-button:hover{
+    box-shadow: 0 0 16px #8a7d7d;
+}
+
+.next-page-button{
+    position: absolute;
+    left: 98.2%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+}
+
+.next-page-button:hover{
+    box-shadow: 0 0 16px #8a7d7d;
+}
+
+.before-page-icon{
+    color: white;
+    border: 5px solid #1b1a1a;
+    border-radius: 1rem;
+    padding: 0.2rem;
+    background:#222121;
+}
+
+.next-page-icon{
+    color: white;
+    border: 5px solid #1b1a1a;
+    border-radius: 1rem;
+    padding: 0.2rem;
+    background:#222121;
+}
+.center-personagem-lista{
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);   
+ 
+}
+
+.space-personagem-lista{
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+    
+}
+.personagem-lista{
+    display: block;
+    
+}
+.personagem{
+    color: white;
+    border: 5px solid #1b1a1a;
+    border-radius: 1rem;
+    padding: 1rem;
+    background:#212121;
+    flex-basis: 100%;
+    width: 16vw;
+    position: relative;
+}
+
+.personagem:hover{
+    box-shadow: 0 0 1rem hsl(0, 1%, 20%);
+    background:#2c2b2b;
+}
+
+.nome-personagem{
+    max-width: 15rem;
+}
+
+
+.delete-personagem{
+    display: block;
+    position: absolute;
+    left: 95%;
+    top: 10%;
+    transform: translate(-50%, -50%);  
+}
+.delete-icon:hover{
+    color: red;
+}
+
+img{
+    max-height: 15vw;
+    max-width: 15vw;
+    object-fit:cover;
+}

@@ -1,0 +1,27 @@
+.container {
+    position: relative;
+    border: 5px solid #1b1a1a;
+    border-radius: 1rem;
+    padding: 0.2rem;
+    background:#222121;
+    height: 23vw;
+    width: 23vw;
+   
+}
+
+.container img {
+ 
+    max-height: 100%;
+    max-width: 100%;
+    aspect-ratio: 1;
+    object-fit:cover;
+}
+
+.upload-div{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}

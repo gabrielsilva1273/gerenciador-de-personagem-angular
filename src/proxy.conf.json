@@ -1,0 +1,6 @@
+{
+    "/api": {
+    "target": "https://gerenciador-de-personagem.herokuapp.com",
+    "secure": true
+    }
+}

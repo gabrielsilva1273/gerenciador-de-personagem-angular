@@ -1,0 +1,29 @@
+<div class="box">
+    <form class="registration-form" [formGroup]="registrationForm">
+        <mat-form-field appearance="fill">
+            <mat-label>Nome</mat-label>
+            <input matInput placeholder="Nome no máximo 20 caracteres" formControlName="userName"  autofocus="on" autocomplete="off">
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+            <mat-label>Email</mat-label>
+            <input matInput placeholder="Email válido" formControlName="email" autocomplete="off">
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+            <mat-label>Senha</mat-label>
+            <input matInput placeholder="No mínimo 14 caracteres" formControlName="password"  type="password" autocomplete="off">
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+            <mat-label>Confirme a senha</mat-label>
+            <input matInput placeholder="No mínimo 14 caracteres" formControlName="confirmPassword" type="password" autocomplete="off">
+        </mat-form-field>
+    </form>
+    <div class="lower-box" >
+        <div class="bottom-buttons" *ngIf="!loading">
+            <button mat-raised-button color="primary" routerLink="/auth/login" (click)="routeLogin()">Voltar ao login</button>
+            <button mat-raised-button color="accent" [disabled]="registrationForm.invalid" class="registration-button" (click)="submitData()">Registrar</button>
+        </div>
+        <div class="loading" *ngIf="loading">
+            <div class="spinner"></div>
+        </div>
+    </div>   
+</div>

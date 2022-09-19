@@ -1,0 +1,15 @@
+
+<div class="confirmationSuccessDiv">
+    <h2 class="defaultMessage" *ngIf="!errorMessage && !successMessage">
+        Aguarde ...
+    </h2>
+    <h2 class="successMessage" *ngIf="successMessage">
+        {{ successMessage }}
+    </h2>
+    <h2 class="errorMessage" *ngIf="errorMessage">
+        {{ errorMessage }}
+    </h2>
+
+    <br>
+    <button mat-raised-button color="primary" routerLink="/auth/login">Voltar ao login</button>
+</div>

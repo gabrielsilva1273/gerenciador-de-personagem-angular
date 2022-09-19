@@ -1,0 +1,40 @@
+mat-form-field {
+    display: block;
+    color: white;
+}
+
+.buttonDiv{
+    display: flex;
+    justify-content: space-between;
+}
+.create-personagem-form{
+    position: absolute;
+    width: 40%;
+    max-width: 320px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid #1b1a1a;
+    border-radius: 1rem;
+    padding: 1rem;
+    background:#222121;
+}
+.loading{
+    display: flex;
+    justify-content: center;
+}
+.spinner{
+    height: 1.1rem;
+    width: 1rem;
+    border: 0.5rem solid;
+    border-color: white transparent white transparent;
+    border-radius: 50%;
+    animation: spin 1.4s ease infinite;
+}
+
+@keyframes spin{
+    to {
+        transform: rotate(360deg);
+    }
+}
+

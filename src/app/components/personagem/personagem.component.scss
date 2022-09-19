@@ -1,0 +1,82 @@
+.log-out-error{
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid #1b1a1a;
+    border-radius: 1rem;
+    padding: 1rem;
+    background:#222121;
+}
+
+
+.before-page-button{
+    position: absolute;
+    left: 1.8%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+}
+
+.before-page-button:hover{
+    box-shadow: 0 0 16px #8a7d7d;
+}
+
+.next-page-button{
+    position: absolute;
+    left: 98.2%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+}
+
+.next-page-button:hover{
+    box-shadow: 0 0 16px #8a7d7d;
+}
+.before-page-icon{
+    color: white;
+    border: 5px solid #1b1a1a;
+    border-radius: 1rem;
+    padding: 0.2rem;
+    background:#222121;
+}
+
+.next-page-icon{
+    color: white;
+    border: 5px solid #1b1a1a;
+    border-radius: 1rem;
+    padding: 0.2rem;
+    background:#222121;
+}
+
+.basic{
+
+}
+
+
+app-image{
+    position: absolute;
+    left: 5%;
+    top: 4%;
+    transform: translate(0,0);
+  
+}
+app-nome{
+    position: absolute;
+    left: 30%;
+    top: 4%;
+    transform: translate(0,0);
+}
+app-nivel{
+    position: absolute;
+    left: 5%;
+    top: 70%;
+    transform: translate(0,0);
+
+}
+app-historia{
+    position: absolute;
+    left: 55%;
+    top: 60%;
+    transform: translate(0,0);
+
+}

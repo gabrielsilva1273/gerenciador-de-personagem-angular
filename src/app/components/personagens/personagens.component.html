@@ -1,0 +1,50 @@
+<div class="log-out-error" *ngIf="!isLoggedIn">
+    <h2>Você não tem autorização para estar aqui</h2>
+    <h2>Tente voltar para o login e se identificar</h2>
+    <button mat-raised-button color="primary" routerLink="/auth/login">Voltar ao login</button>
+</div>
+
+<div class="logged-in" *ngIf="isLoggedIn">
+    <div class="log-out">
+        <button mat-raised-button color="primary" routerLink="/auth/login" (click)="logOut()">Sair</button>
+    </div>
+    <div class="create">
+        <button mat-raised-button color="primary" routerLink="/personagens/criar">Criar Personagem</button>
+    </div>
+    
+    <div class="search-bar">
+        <form [formGroup]="personagemForm" class="personagem-form">
+        <mat-form-field appearance="legacy" class="form-field">
+            <mat-label>Pesquisar personagem por nome</mat-label>
+            <mat-icon matPrefix>search</mat-icon>
+            <input matInput autocomplete="off" type="text" formControlName="personagem">
+        </mat-form-field>
+        </form>
+    </div>
+    <div class="center-personagem-lista">   
+        <div class="space-personagem-lista">
+            <div class="personagem-lista" *ngFor="let personagem of personagens">
+                <div class="personagem" (click)="routeToPersonagem(personagem.id)">
+                    <button mat-icon-button class="delete-personagem" (mouseover)='overDelete()' (mouseout)='outDelete()' (click)="deletePersonagem(personagem.id)">
+                        <mat-icon class="delete-icon">clear</mat-icon>
+                    </button>
+                    <img [src]="getImage(personagem)" width="500px" height="500px" >
+                    <h2 class="nome-personagem">{{ personagem.nome }}</h2>
+                    <a>{{ personagem.idade }} anos</a>
+                    <br>
+                    <a>{{ personagem.nacionalidade }}</a>
+                </div>        
+            </div>
+        </div>
+    </div> 
+    <button mat-icon-button class="before-page-button" (click)="navigateBeforePage()" *ngIf="hasPrevious">
+        <mat-icon class="before-page-icon">navigate_before</mat-icon>
+    </button>
+    <button mat-icon-button class="next-page-button" (click)="navigateNextPage()" *ngIf="hasNext">
+        <mat-icon class="next-page-icon">navigate_next</mat-icon>
+    </button>
+</div>
+
+
+
+

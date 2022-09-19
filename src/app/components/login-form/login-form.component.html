@@ -1,0 +1,22 @@
+
+<div class="formDiv">
+    <form [formGroup]="loginForm">
+
+        <mat-form-field appearance ="fill">
+            <mat-label>Email</mat-label>
+            <input matInput placeholder="Email válido" formControlName="email" autocomplete="off" autofocus="on">
+        </mat-form-field>
+
+        <mat-form-field appearance ="fill">
+            <mat-label>Senha</mat-label>
+            <input matInput type="password" placeholder="Senha" formControlName="password" autocomplete="off">
+        </mat-form-field>
+    </form>
+    <div class="buttonDiv" *ngIf="!loading">
+        <button mat-raised-button [disabled]="loginForm.invalid" color="accent" class='loginButton' (click)="submitData()">Login</button>
+        <button mat-raised-button color="primary" (click)="routeRegistrar()">Registrar-se</button>
+    </div>
+    <div class="loading" *ngIf="loading">
+        <div class="spinner"></div>
+    </div>
+<div>

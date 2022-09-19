@@ -1,0 +1,23 @@
+<div class="create-personagem-form">
+    <form [formGroup] = "createPersonagemForm">
+        <mat-form-field appearance ="fill">
+            <mat-label>Nome</mat-label>
+            <input matInput placeholder="Nome do personagem" formControlName="nome" autocomplete="off" autofocus="on">
+        </mat-form-field>
+        <mat-form-field appearance ="fill">
+            <mat-label>Idade</mat-label>
+            <input matInput type="number" placeholder="Idade" formControlName="idade" autocomplete="off">
+        </mat-form-field>
+        <mat-form-field appearance ="fill">
+            <mat-label>Nacionalidade</mat-label>
+            <input matInput placeholder="Nacionalidade" formControlName="nacionalidade" autocomplete="off">
+        </mat-form-field>
+    </form>
+    <div class="buttonDiv" *ngIf="!loading">
+        <button mat-raised-button [disabled]="createPersonagemForm.invalid" color="accent" class='criarPersonagemButton' (click)="submitData()">Criar personagem</button>
+        <button mat-raised-button color="primary" (click)="close()">Voltar</button>
+    </div>
+    <div class="loading" *ngIf="loading">
+        <div class="spinner"></div>
+    </div>
+</div>
